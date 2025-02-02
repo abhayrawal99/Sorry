@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">
+          I’m truly sorry for forgetting such an important milestone in our
+          relationship our first month together. I understand how much it meant
+          to you, and I feel terrible for disappointing you and hurting your
+          feelings. You deserve to be celebrated and appreciated, especially on
+          days that hold so much significance for us. I promise to be more
+          thoughtful and attentive moving forward, because you mean the world to
+          me, and I never want to make you feel unvalued again. Thank you for
+          your patience and understanding, and I hope you can forgive me..!! Sorry My dear wife..😭❤️🥀
+        </h1>
+        <h1 class="header_text">Sorry Dear Wife Please Forgive ME..!!>😭🖤</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+        <style>
+          .container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+          }
+          .gif_container img {
+            width: 100%;
+            height: auto;
+          }
+          .buttons {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+          }
+          .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          #noButton {
+            position: absolute;
+          }
+        </style>
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var button = document.getElementById("noButton");
+            var container = document.querySelector(".container");
+            var x = Math.random() * (container.clientWidth - button.offsetWidth);
+            var y = Math.random() * (container.clientHeight - button.offsetHeight);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
